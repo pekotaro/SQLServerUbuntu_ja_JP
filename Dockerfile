@@ -21,16 +21,16 @@ RUN apt-get install -y less
 RUN apt-get install -y vim
 RUN apt-get install -y iputils-ping
 
-# SQL Serverインストール用の設定
+# SQL Serverインストール用のデフォルト設定
 #   エディション：Developer
-#   デフォルトパスワード：P@ss1234
-#   デフォルトで使用するポート：1433
+#   初期パスワード：P@ssw0rd
+#   使用するポート：1433
 #   言語：日本語
-ENV ACCEPT_EULA Y
+ENV ACCEPT_EULA=Y
 ENV MSSQL_PID=Developer
-ENV MSSQL_SA_PASSWORD=P@ss1234
+ENV MSSQL_SA_PASSWORD=P@ssw0rd
 ENV MSSQL_TCP_PORT=1433
 ENV MSSQL_LCID=1041
 
 # SQL Serverのコマンドラインツールにパスを通す
-RUN echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
+ENV PATH=$PATH:/opt/mssql-tools/bin
