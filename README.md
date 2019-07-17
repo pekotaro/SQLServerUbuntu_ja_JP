@@ -18,6 +18,8 @@ SQL Serverインストール時の設定(環境変数)として、
 ```
 docker run -it -d -p 1433:1433 pekotaro/mssql-server-linux-ja_jp
 ```
+* ユーザー:sa
+* パスワード:P@ssw0rd
 
 ## デフォルト設定の変更
 デフォルトの設定を変更したい場合は、  
