@@ -1,1 +1,1 @@
-# SQLServerUbuntu_ja_JP
+# mssql-server-linux_ja_jp
