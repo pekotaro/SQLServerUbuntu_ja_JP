@@ -24,7 +24,7 @@ docker run -it -d -p 1433:1433 pekotaro/mssql-server-linux-ja_jp
 下記のように`docker run`実行時に環境変数を上書いてください。
 ```
 # エディションをExpressに変更
-docker run -it -d -p 1433:1433 -MSSQL_PID=Express pekotaro/mssql-server-linux-ja_jp
+docker run -it -d -p 1433:1433 -e MSSQL_PID=Express pekotaro/mssql-server-linux-ja_jp
 ```
 
 設定可能な環境変数のリストは下記リンク先をご参照ください。  
