@@ -9,7 +9,6 @@ RUN locale-gen ja_JP.UTF-8
 ENV LANG=ja_JP.UTF-8
 ENV LANGUAGE=ja_JP:ja
 ENV LC_ALL=ja_JP.UTF-8
-ENV LC_CTYPE=ja_JP.UTF-8
 
 # タイムゾーンをAsia/Tokyoに変更
 ENV TZ Asia/Tokyo
