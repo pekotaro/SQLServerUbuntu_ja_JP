@@ -1,4 +1,4 @@
-# mssql-server-linux_ja_jp
+# mssql-server-linux-ja_jp
 
 Microsoft公式のSQLServerのイメージ( https://hub.docker.com/_/microsoft-mssql-server )に、  
 日本語の設定を追加したイメージです。
